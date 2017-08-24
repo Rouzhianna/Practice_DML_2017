@@ -19,17 +19,20 @@ public class MenuScript : MonoBehaviour {
 	//	exitText = exitText.GetComponent<Button> ();
 		quitMenu.enabled = false;
 		startMenu.enabled = true;
-		paused = !paused;
+		//paused = !paused;
 
+		//if (!paused) {
+		//	Time.timeScale = 1;
+		//	startMenu.enabled = false;
+		//} else 
+		
 		if (!paused) {
 			Time.timeScale = 1;
 			startMenu.enabled = false;
-		} else if (paused) {
-			Time.timeScale = 0;
 		}
 	}
 
-	public void ExitPress () {
+	public void ExitPress () {     //ставит на паузу
 		quitMenu.enabled = true;
 		startMenu.enabled = false;
 
@@ -44,7 +47,7 @@ public class MenuScript : MonoBehaviour {
 	//	exitText.enabled = false;
 	}
 
-	public void NoPress () {
+	public void NoPress () {         //если была пауза - снимать ее
 		quitMenu.enabled = false;
 		startMenu.enabled = false;
 
@@ -59,7 +62,7 @@ public class MenuScript : MonoBehaviour {
 	//	exitText.enabled = true;
 	}
 
-	public void PausePress () {
+	public void PausePress () {      //ставить на паузу или возвращаться к игре
 		quitMenu.enabled = false;
 		startMenu.enabled = true;
 

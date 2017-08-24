@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bc50d931c4a09314d8f1b87a1e914b9f
+timeCreated: 1503057959
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sevilla Decor
+  fontNames:
+  - Sevilla Decor
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

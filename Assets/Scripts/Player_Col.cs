@@ -7,13 +7,13 @@ public class Player_Col : MonoBehaviour {
 	public Image im;
 
 	void OnTriggerEnter (Collider trig) {
-		if (trig.gameObject.tag == "Coin") {
+		if (trig.gameObject.tag == "Syringe") {
 			Destroy (trig.gameObject);
 			im.fillAmount += 0.05f;
 		}
 
 		if (trig.gameObject.tag == "Enemy") {
-			im.fillAmount -= 0.01f;
+			im.fillAmount -= 0.5f;
 		}
 	}
 
